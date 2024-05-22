@@ -1,0 +1,19 @@
+included is a file named File please use this to test the program. However any file will work.
+
+Usage
+First run the 
+	python3 sha256.key *your password*
+This creates a private_key.bin file which is a sha256 hash of your password. 
+
+Next run the 
+	python3 AES-encrypt.py *file name you want to encrypt* en
+This creates a encrypted_files.txt file which is the encrypted text of the file you wanted to encrypt\
+
+For decryption its very simple
+First make sure you have the same key as when you created the file. If not use the 
+	python3 sha256.key *the password you used to create the file*
+This will make a new private_key.bin file
+
+Now run the 
+	python3 AES-encrypt.py encrypted_files.txt dn
+This will decrypt the encrypted file and make a new file named decrypted_file.txt
